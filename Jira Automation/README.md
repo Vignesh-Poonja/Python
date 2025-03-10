@@ -51,6 +51,11 @@ output = json.loads(response.text)
 for item in output:
     print(item["name"])
 ```
+![image](https://github.com/user-attachments/assets/d5dc7aed-e44c-42ca-a08b-48a1f52e653e)
+![image](https://github.com/user-attachments/assets/d2f02515-c470-425d-a082-372f103222ed)
+
+Docs link: <https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-projects/#api-rest-api-3-project-projectidorkey-get>
+
 
 ### 4. Automate JIRA Issue Creation on GitHub Event
 To automate issue creation when a GitHub event occurs, set up a webhook in GitHub and modify the script to listen for events.
@@ -78,33 +83,36 @@ response = requests.post(
 print(response.status_code, response.text)
 ```
 
-### 5. Setting Up a GitHub Webhook
-1. Navigate to your GitHub repository.
-2. Go to **Settings** > **Webhooks**.
-3. Click **Add webhook**.
-4. Enter your server URL that listens for GitHub events.
-5. Choose the event types you want to trigger JIRA issue creation (e.g., `issues`).
-6. Save the webhook.
-
-**[Insert Screenshot: Creating GitHub Webhook]**
-
-### 6. Running the `github-jira.py` Script on an EC2 Instance
+### 5. Running the `github-jira.py` Script on an EC2 Instance
 1. Upload the script to your EC2 instance.
 2. Run the script:
 ```bash
 python github-jira.py
 ```
-3. Copy the **Public IPv4 DNS** of your EC2 instance and use it as the webhook URL in GitHub.
+![image](https://github.com/user-attachments/assets/f5b9e8e7-ecf3-47a8-8e9c-50abaee53a89)
 
-**[Insert Screenshot: Copying EC2 Public IPv4 DNS]**
+
+### 6. Setting Up a GitHub Webhook
+1. Navigate to your GitHub repository.
+2. Go to **Settings** > **Webhooks**.
+3. Click **Add webhook**.
+4. Copy the **Public IPv4 DNS** of your EC2 instance and use it as the webhook URL in GitHub.
+5. Choose the event types you want to trigger JIRA issue creation (e.g., `issues`).
+6. Save the webhook.
+
+![image](https://github.com/user-attachments/assets/af071c97-6a45-44d3-8298-799fbde9cda4)
+![image](https://github.com/user-attachments/assets/6fb1ce4c-59c7-46fe-b7de-c647e6b2a5eb)
+![image](https://github.com/user-attachments/assets/841121b8-dea2-4ec3-919f-707338462344)
+
 
 ### 7. Creating a GitHub Issue and Commenting `/Jira`
 - Create an issue in GitHub.
 - Add a comment with `/Jira` to trigger ticket creation.
 - Verify the issue in JIRA.
+- 
+![image](https://github.com/user-attachments/assets/5d6cca7d-fd85-4f64-a41b-f39c2e9bad1c)
+![image](https://github.com/user-attachments/assets/1568a80d-d7cb-4976-b6a5-5d5e499ef792)
 
-**[Insert Screenshot: Creating Issue and Commenting /Jira]**
-**[Insert Screenshot: Verifying Issue in JIRA]**
 
 ## HTTP Methods Explained
 
@@ -182,8 +190,6 @@ Here, `@app.route('/')` is a **decorator** that maps the `/` route to the `home`
 By automating JIRA issue creation based on GitHub events, teams can streamline their workflow and improve tracking of development progress.
 
 ---
-
-**[Insert Screenshot Locations from Document]**
 - Creating GitHub Webhook
 - Copying EC2 Public IPv4 DNS
 - Creating Issue and Commenting `/Jira`
