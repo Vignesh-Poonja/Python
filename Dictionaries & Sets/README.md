@@ -85,5 +85,5 @@ print(set1 ^ set2)  # Symmetric Difference: {1, 2, 4, 5}
 - Avoid modifying dictionaries while iterating over them.
 - Use `defaultdict` from `collections` when handling missing dictionary keys.
 
-Dictionaries and sets provide powerful and efficient ways to handle data in Python. 🚀
+Dictionaries and sets provide powerful and efficient ways to handle data in Python.
 
