@@ -107,5 +107,3 @@ print(x, y, z)  # Output: 4 5 6
 
 Understanding when to use **lists vs. tuples** can help improve efficiency and ensure data integrity in Python programming.
 
-Happy Coding! 🚀
-
