@@ -67,5 +67,5 @@ print(y)
 - Use `elif` instead of multiple `if` statements to improve efficiency.
 - Leverage ternary operators for simple conditional assignments.
 
-Using conditions properly improves the efficiency, readability, and maintainability of Python programs. 🚀
+Using conditions properly improves the efficiency, readability, and maintainability of Python programs.
 
