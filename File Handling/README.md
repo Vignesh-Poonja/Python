@@ -76,5 +76,5 @@ ENABLE_FEATURE_X = true
 - Avoid overwriting critical files accidentally by checking if they exist before writing.
 - Use logging instead of print statements for better debugging and monitoring.
 
-File handling is a crucial skill in Python, making it easy to work with different types of files efficiently. 🚀
+File handling is a crucial skill in Python, making it easy to work with different types of files efficiently.
 
