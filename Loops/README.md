@@ -62,5 +62,5 @@ for number in range(5):
 - Use `continue` to skip specific iterations when required.
 - Avoid infinite loops unless explicitly needed.
 
-Loops are fundamental in Python programming and allow for efficient iteration and automation. 🚀
+Loops are fundamental in Python programming and allow for efficient iteration and automation.
 
