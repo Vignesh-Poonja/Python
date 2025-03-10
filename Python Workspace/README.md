@@ -77,7 +77,6 @@ Remove-Item -Recurse -Force project-abc
 - Use a virtual environment to avoid conflicts with system-wide Python packages.
 - It is recommended to use `requirements.txt` for dependency management.
 
-Happy Coding! 🚀
 
 ## 8. Importance of a Python Workspace
 
