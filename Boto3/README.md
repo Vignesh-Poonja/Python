@@ -1,6 +1,3 @@
-
----
-
 ### **Boto3**
 ```md
 # Boto3 - AWS SDK for Python
